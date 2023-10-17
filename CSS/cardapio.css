@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+ @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+*{
+    box-sizing: border-box ;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:rgb(0, 0, 0) !important;
+    background-size: cover;
+    background-blend-mode:darken;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/*Barra de navegação*/
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #1b1b1b36; 
+    z-index: 100;   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+   filter:brightness(1.5);
+   height: 70px;
+   width: 70px;
+   margin: 2px 10px 2px 40px;
+   position: absolute;
+   left:10px;
+   top:6px;
+}
+.login{
+    position: absolute;
+    top: 25px;
+    right:120px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #F0F0F0;
+    font-weight: 600;
+    font-size: 13px;
+}
+a .usuario{
+    position: absolute;
+    right: 10px;
+    margin: 2px 40px 2px 10px;
+    top: 10px;
+    align-items: center;
+}
+
+.usuario img{
+    border-radius: 100%;
+    -webkit-border-image: 100%;
+    height: 50px;
+    width: 50px;
+    border: 5px solid white;
+    transition: ease-in-out 0.5s;
+}
+.usuario img:hover{
+    transform: scale(1.2);
+    border: 1px solid #D41377;
+}
+.itens{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.itens li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 550;
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+    margin-right:2.5vw;
+    margin-left: 2.5vw;
+}
+.itens input{
+    width: 250px;
+    border-radius: 500px;
+    border: 3px solid #D41377;
+    background: transparent;
+    color: #D41377;
+    padding: 5px 20px 5px 20px;
+}
+.voltar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 75px;
+    width: 75px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 500px;
+    border: 1px solid rgba(77, 29, 29, 0.39);
+    transition: all 0.5s;
+}
+.voltar:hover{
+    background-color: #1f1e1e;
+}
+.carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    height: 75px;
+    width: 75px;
+    background-color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 500px;
+    border: 1px solid rgb(56, 56, 56);
+    transition: all 0.5s;
+    z-index: 100;
+}
+.carrinho:hover{
+    background-color: rgba(250, 29, 29, 0.993);
+    cursor: pointer;
+    bottom:15px;
+
+}
+
+
+
+/*Classes para efeitos*/
+
+.underline::after{
+    content: "";
+    height: 5px;
+    padding-bottom:1px ;
+    width: 0%;
+    background-color: #D41377;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.25s ease-in-out;
+    z-index: 99;
+}
+
+.underline:hover::after{
+    content: "";height: 1px;
+    width: 100%;
+}
+
+
+
+/*Primeira Parte do Corpo do site*/
+.inicio{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    background: rgba(0, 0, 0,0.4);
+    background-blend-mode: color;
+    z-index: -99;
+}
+.bg-middle{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 30vw 24vw rgba(0, 0, 0, 0.95);
+    width: 100%;
+    background: rgb(0, 0, 0);
+    z-index: -99;
+}
+.bg-video{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 110% ;
+    z-index: -100;
+    background: url(../img/backgroundImage.png) no-repeat center;
+    background-size: cover;
+    filter: contrast(1.05);
+}
+h1{
+    text-align: center;
+    color:bisque !important;
+    font-size: 5vw !important;
+    font-weight: 100 !important;
+    margin-bottom: 0;
+    font-family: 'Smooch', cursive;
+}
+h2{
+    text-align: center;
+    background-image: linear-gradient(128deg,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 16);
+    color: #000000 !important;
+    font-size:8vw !important;
+    margin-top: 0;
+    letter-spacing: 10px;
+}
+.title{
+    width: 100% !important;
+    height: 25vw;
+    padding-top:10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+/*Botão Principal(Cardápio)*/
+.btn1{
+
+    color: #f0f0f0 !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 35px !important;
+    text-align: center ;  
+    position: relative !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    align-content:center;
+    margin-left: 10px;
+}
+.btn1::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 3px solid white ;
+    border-radius: 100px;
+    background-color: transparent ;
+    position: absolute;
+    left: 0;
+    bottom: 5px ;
+    transition: 0.5s ease-in-out;
+}
+.btn1:hover::after{
+    width: 100%;
+    content: "";
+}
+
+/* Segunda Parte do Corpo do site*/
+.linha1{
+    box-shadow: 0px 0px 100px 100px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(233, 222, 210);
+    height: 100%;
+    padding-bottom: 180px;
+}
+.white{
+    display: flex;
+    align-items: center;
+    color: beige;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+#Home{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+}
+.fundo{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    margin-top: 80px;
+    width: 550px;
+    transform: rotate(45deg);
+}
+.imagem{
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    height: 600px;
+}
+.textbox{
+    height: 200px;
+    position: relative;
+    right:0 ;
+    z-index: 10;
+    padding-bottom: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+}
+.textbox span{
+    font-size: 60px;
+    font-weight: 500;
+}
+.textbox .selo{
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    
+}
+.textbox strong
+{
+ color: rgb(221, 221, 30);
+}
+.bar{
+    position: absolute;
+    left: 0;
+    background-color: black;
+    height: 600px;
+    width: 180px;
+    z-index: 2;
+}
+.imagemtotal{
+    display: flex;
+    margin: 0;
+}
+
+
+/* Categorias */
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+}
+.card{
+    margin: 5px;
+    box-shadow: 0px 0px 10px #1a1919;
+    transition: all 0.5s;
+}
+.card:hover{
+    margin-bottom: 20px;
+}
+
+.content img{
+    height: 200px;
+}
+
+.card-body{
+    background-color: #6e6a6a;
+}
+
+.card-title{
+    color: #ffffff !important;
+}
+.size img{
+    height: 6rem;
+    width: 10rem;
+}
+.btn{
+    background-color: #D41377 !important;
+    border:1px solid #D41377 !important;
+}
+.btn:hover{
+    background-color: rgb(1, 1, 71) !important;
+    border:1px solid !important; 
+    color: yellow !important;
+}
+.itens{
+    display: flex;
+
+}
+.card p{
+    text-decoration: none !important;
+    font-size: 1.3rem;
+    color: wheat;
+}
+
+/*Rodapé do site*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(90deg black,#1b1b1b) !important;
+    color: bisque !important;
+}
+footer p{
+    height: 200px;
+    width: 25%;
+    text-align: center;
+}
+.redsociais{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 25%;
+    flex-direction: column;
+    font-size: 1.3vw;
+    padding-left: 50px;
+    background-color: #1b1b1b;
+}
+.redsociais a{
+    color: bisque !important;
+    letter-spacing: 1px;
+    margin:10px auto;
+    text-decoration: none;
+}
+.redsociais a:hover{
+    color: #fed90f !important;
+}
+.espaco{
+    width: 30%;
+    text-align: center;
+    font-family: 'Smooch', cursive;
+    font-size: 50px;
+}
+.redsociais span{
+    font-size: 30px;
+    font-family:'Smooch', cursive;
+}
+
+
+
+/*Terceira parte do corpo do site*/
+.linha2{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+}
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .itens li a{
+        opacity: 0;
+    }
+    .logo{
+        top:10px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .usuario img{
+        width: 40px;
+        height: 40px;
+    }
+    .login{
+        font-size: 12px !important ;
+    }
+    .btn1{
+        font-size: 5vw !important;
+    }
+    .btn1::after{
+        opacity: 0;
+    }
+    .btn1{
+        margin-left: 0;
+    }
+    .categorias img{
+        height: 50px;
+        width: 50px;
+        margin: auto;
+    }
+    .title{
+        padding-top: 20% !important;
+    }
+    h1{
+        margin-top: 75% !important;
+        font-size: 40px !important;
+    }
+    h2{
+        font-size: 3rem !important;
+    }
+    #Home{
+        margin-top: 100%;
+    }
+    .bg-video{
+        height: 70%;
+        
+    }
+    .textbox{
+        background: transparent;
+        text-align: center;
+        height: 300px;
+        width: 250px;
+        font-size: 12px;
+        right: 0;
+        box-shadow: 0px 0px 0px 0px;
+        margin-right: 10px !important;
+        padding-bottom: 0;
+    }
+    .textbox span{
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .textbox .selo{
+        margin-top: 5px;
+        height: 90px;
+        width: 110px;
+    }
+    .categorias span{
+        font-size: 3vw;
+    }
+    .imagem{
+        height: 200px;
+    }
+    .fundo{
+        width: 200px;
+        margin-top: 20px;
+        margin-right: 500px;
+    }
+    .bar{
+        height: 200px;
+        width: 100px;
+    }
+    
+}
+@media screen and (max-width:1200px){
+    .login{
+        margin-top: 40px;
+        bottom: 0;
+        right: 25px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .container {
+            background-color: beige;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="email"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .voltar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 75px;
+            width: 75px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 500px;
+            border: 1px solid black;
+        }
+        .voltar:hover{
+            background-color: #f4f4f4;
+        }
+    </style>
+    <title>Esqueceu a Senha</title>
+</head>
+<body>
+    <img src="/video/20231002_023835-removebg-preview.png" alt="logo">
+    <a href="Pagina de login.html" class="voltar"><i class="bi bi-box-arrow-in-left" style="font-size: 2.5rem;text-align: center;margin-top: 3.5px;"></i></a>
+    <div class="container">
+        <h1>Esqueceu a Senha</h1>
+        <p>Insira o seu endereço de e-mail cadastrado para redefinir a senha.</p>
+        <form action="enviar_email.php" method="POST">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Redefinir Senha</button>
+        </form>
+    </div>
+</body>
+</html>
