@@ -43,7 +43,6 @@
             background-color: #fff;
             border: 1px solid #ddd;
             margin: 10px;
-            padding: 20px;
             width: 300px;
             text-align: center;
             transition: all 0.5s;
@@ -78,6 +77,47 @@
         .voltar:hover{
             background-color: #f4f4f4;
         }
+        .container {
+  width: 350px;
+  height: 500px;
+  perspective: 800px;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  
+}
+
+.back {
+  background-color: #3a3a3a;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
     </style>
 </head>
 <body>
@@ -88,26 +128,58 @@
         <h1>Novidades do Restaurante</h1>
     </header>
     <section class="news">
-        <article class="news-item">
-            <img src="https://j6t2y8j5.rocketcdn.me/wp-content/uploads/2016/07/15-comidas-de-rua-mais-apetitosas-e-bonitas-do-mundo-12.jpg" alt="Novidade 1">
-            <h2>Macarons</h2>
-            <p>Uma deliciosa iguaria de origem francesa esta sendo vendida em nosso restaurante venha conferir.</p>
-        </article>
-        <article class="news-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlE-SY6geXQZPRUrWUMbOn3JzXgeSW5-QYZg&usqp=CAU" alt="Novidade 2">
-            <h2>Panqueca de frutas silvestres</h2>
-            <p>Uma otima adição para seu cafe da manhã, peça agora uma deliciosa panqueca. </p>
-        </article>
-        <article class="news-item">
-            <img src="https://th.bing.com/th/id/R.2af8a871485849eed27b518b2362de54?rik=pHVHwpd8%2bebWdQ&pid=ImgRaw&r=0" alt="Novidade 2">
-            <h2>Promoção nas comidas com massa</h2>
-            <p>Confira agora os descontos em diverços pratos que contem como principal ingrediaente massa. </p>
-        </article>
-        <article class="news-item">
-            <img src="https://th.bing.com/th/id/R.44cd2a35cf86f2570874b774c6e42306?rik=j9GofFSOPItSOA&riu=http%3a%2f%2f4.bp.blogspot.com%2f__rjgLAV3pUg%2fTMpBEO04AII%2fAAAAAAAAAM8%2fxARmgGqG6mQ%2fs1600%2fpizza%2bchocolate.jpg&ehk=Cj3je9fbHZm4k2%2bYgR98lKTxK4vmtIviEuEXDQCAYus%3d&risl=&pid=ImgRaw&r=0" alt="Novidade 2">
-            <h2>Novo sabor a vendida</h2>
-            <p>Veja nossa nova variedades de sabores de pizza</p>
-        </article>
+        <section class="news">
+            <div class="container">
+                <div class="card">
+                <div class="front news-item">
+                    <img src="https://j6t2y8j5.rocketcdn.me/wp-content/uploads/2016/07/15-comidas-de-rua-mais-apetitosas-e-bonitas-do-mundo-12.jpg" alt="Novidade 1">
+                    <h2>Macarons</h2>
+                    <p>Uma deliciosa iguaria de origem francesa esta sendo vendida em nosso restaurante venha conferir.</p>
+                </div>
+                <div class="back">
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="card">
+                <div class="front news-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlE-SY6geXQZPRUrWUMbOn3JzXgeSW5-QYZg&usqp=CAU" alt="Novidade 2">
+                    <h2>Panqueca de frutas silvestres</h2>
+                    <p>Uma otima adição para seu cafe da manhã, peça agora uma deliciosa panqueca. </p>
+                </div>
+                <div class="back">
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="card">
+                <div class="front news-item">
+                    <img src="https://th.bing.com/th/id/R.2af8a871485849eed27b518b2362de54?rik=pHVHwpd8%2bebWdQ&pid=ImgRaw&r=0" alt="Novidade 2">
+                    <h2>Promoção nas comidas com massa</h2>
+                    <p>Confira agora os descontos em diverços pratos que contem como principal ingrediaente massa. </p>
+                </div>
+                <div class="back">
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="card">
+                <div class="front news-item">
+                    <img src="https://th.bing.com/th/id/R.44cd2a35cf86f2570874b774c6e42306?rik=j9GofFSOPItSOA&riu=http%3a%2f%2f4.bp.blogspot.com%2f__rjgLAV3pUg%2fTMpBEO04AII%2fAAAAAAAAAM8%2fxARmgGqG6mQ%2fs1600%2fpizza%2bchocolate.jpg&ehk=Cj3je9fbHZm4k2%2bYgR98lKTxK4vmtIviEuEXDQCAYus%3d&risl=&pid=ImgRaw&r=0" alt="Novidade 2">
+                    <h2>Novo sabor a vendida</h2>
+                    <p>Veja nossa nova variedades de sabores de pizza</p>
+                </div>
+                <div class="back">
+                </div>
+                </div>
+            </div>
+        </section>
     </section>
 </body>
 </html>
