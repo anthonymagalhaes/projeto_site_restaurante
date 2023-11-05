@@ -9,6 +9,8 @@
 </head>
 
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="/js/filtrar.js"></script>
     <div class="carrinho"><i class="bi bi-cart4" style="font-size: 2.3rem;color: white;"></i></div>
     <video loop autoplay muted class="bg-video">
         <source src="/video/VideoBackground.mp4" type="video/mp4">
@@ -20,24 +22,41 @@
 
             <nav>
                 <ul class="itens">
-                    <input type="text" placeholder="Pesquisar">
-                    <button type="submit" style="background: transparent;border: none;padding: 10px;"><i class="bi bi-search" style=" color: #D41377;font-size: 1.5rem;"></i></button>
+                  <div class="buscar">
+                    <input id="inputBusca" onkeyup="filtrar()" type="text" placeholder="O que você procura?">
+                    <ul id="listaProdutos">
+                    </ul>
+                </div>
                 </ul>
                 <a href="Pagina de login.html" class="login underline">Login/Register</a>
                 <a href="perfil.html"><div class="usuario"><img src="/video/perfil.webp" alt=""></div></a>
             </nav>
         </header>
-
-        <div class="container text-center">
-            <div class="row">
+        <div class="container text-center" >
+            <div class="row" >
               <div class="col-0 col-md-2"></div>
-              <div class="col-12 col-md-8 title">
-                
-                
-                    <h1>La Maison Bouffe</h1>
-                    <h2>Cardápio</h2>
-
-                    
+              <div class="col-12 col-md-8 title" >
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true"  style="margin-top: 80px;margin-bottom: 10px;">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/video/halloween (1).jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/video/pizza.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/video/pizza (1).jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
               <div class="col-0 col-md-2"></div>
             </div>
@@ -46,6 +65,7 @@
 
         <div>
              <div class="linha1" >
+              <h2>Cardápio</h2>
                 <div class="container text-center" style="padding-top: 40px;">
                     <div class="row">
                       <div class="content">

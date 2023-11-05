@@ -1,11 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
- @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 *{
     box-sizing: border-box ;
     scroll-behavior: smooth;
+}
+.buscar{
+    width: 400px;
+    background: #eeeeee00;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+input{
+    width: 90%;
+    height: 50px;
+    padding-left: 20px;
+    font-size:22px;
+    border:1px solid #ddd;
+    margin:15px;
+    border-radius:5px;
+}
+
+#listaProdutos{
+    display: none;   
+    width:400px;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    top: 50px;
+    
+}
+
+#listaProdutos li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size:18px;
+    color: black;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    padding: 10px;
+}
+
+#listaProdutos li a:hover{
+    background: #eee;
+}
+
+.item-name{
+    margin-left:15px;
 }
 body{
     background-color:rgb(0, 0, 0) !important;
@@ -56,7 +105,9 @@ a .usuario{
     top: 10px;
     align-items: center;
 }
-
+.banner{
+    width: 100% !important;
+}
 .usuario img{
     border-radius: 100%;
     -webkit-border-image: 100%;
@@ -86,7 +137,7 @@ a .usuario{
     margin-left: 2.5vw;
 }
 .itens input{
-    width: 250px;
+    width: 300px;
     border-radius: 500px;
     border: 3px solid #D41377;
     background: transparent;
@@ -196,29 +247,23 @@ h1{
     font-weight: 100 !important;
     margin-bottom: 0;
     font-family: 'Smooch', cursive;
+    position: relative;
+    top: 70px;
 }
 h2{
-    text-align: center;
-    background-image: linear-gradient(128deg,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+    background-image: linear-gradient(128deg,rgb(255, 0, 0),rgba(0, 38, 255, 0.459));
     -webkit-background-clip:text;
     background-clip: text;
     -webkit-text-stroke-color: transparent;
     -webkit-text-stroke-width: calc(1em / 16);
     color: #000000 !important;
-    font-size:8vw !important;
-    margin-top: 0;
+    font-size:5vw !important;
+    margin-top: 5px;
     letter-spacing: 10px;
+    position: relative;
+    top: 25px;
 }
-.title{
-    width: 100% !important;
-    height: 25vw;
-    padding-top:10%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
 
-}
 
 
 
