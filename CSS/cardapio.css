@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 *{
@@ -16,7 +16,9 @@
     justify-content: center;
     position: relative;
 }
-
+.size{
+    height: 11.2rem !important;
+}
 input{
     width: 90%;
     height: 50px;
@@ -36,6 +38,9 @@ input{
     position: absolute;
     top: 50px;
     
+}.flex{
+    display: flex;
+    justify-content: space-around;
 }
 
 #listaProdutos li a{
@@ -47,6 +52,7 @@ input{
     border: 1px solid #ddd;
     background: #f6f6f6;
     padding: 10px;
+   
 }
 
 #listaProdutos li a:hover{
@@ -98,6 +104,7 @@ nav{
     font-weight: 600;
     font-size: 13px;
 }
+
 a .usuario{
     position: absolute;
     right: 10px;
@@ -263,7 +270,14 @@ h2{
     position: relative;
     top: 25px;
 }
-
+.bar{
+    width: 90%;
+    margin-top: 40px;
+    height: 2px;
+    background-color: #D41377;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.308);
+}
 
 
 
@@ -364,14 +378,6 @@ h2{
 .textbox strong
 {
  color: rgb(221, 221, 30);
-}
-.bar{
-    position: absolute;
-    left: 0;
-    background-color: black;
-    height: 600px;
-    width: 180px;
-    z-index: 2;
 }
 .imagemtotal{
     display: flex;
@@ -570,10 +576,6 @@ footer p{
         width: 200px;
         margin-top: 20px;
         margin-right: 500px;
-    }
-    .bar{
-        height: 200px;
-        width: 100px;
     }
     
 }
