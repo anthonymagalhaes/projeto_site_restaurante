@@ -43,7 +43,10 @@
             text-align: center;
             transition: all 0.5s;
         }
-
+        .halloween{
+            background-color: rgb(65, 9, 46);
+            color: white;
+        }
         .news-item img {
             max-width: 100%;
             height: auto;
@@ -92,6 +95,7 @@
   transform-style: preserve-3d;
 }
 
+
 .front,
 .back {
   height: 100%;
@@ -106,13 +110,136 @@
 }
 
 .back {
-    overflow: hidden;
+ overflow: hidden;
   background-color: white;
   transform: rotateY(180deg);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 5rem;
 }
+.descricao{
+    line-height: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+}
+.botao{
+    position: absolute;
+    bottom: 40px;
+    height: 48px;
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(196, 32, 32);
+    border-radius: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 4px 4px 8px rgba(128, 0, 128, 0.37);
+}
+.botao:hover{
+    bottom: 50px;
+    background-color: rgb(255, 0, 98);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(90deg black,#1b1b1b) !important;
+    color: bisque !important;
+}
+footer p{
+    height: 200px;
+    width: 25%;
+    text-align: center;
+}
+.redsociais{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 25%;
+    flex-direction: column;
+    font-size: 1.3vw;
+    padding-left: 50px;
+    background-color: #1b1b1b;
+}
+.redsociais a{
+    color: bisque !important;
+    letter-spacing: 1px;
+    margin:10px auto;
+    text-decoration: none;
+}
+.redsociais a:hover{
+    color: #fed90f !important;
+}
+.espaco{
+    width: 30%;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+}
+.redsociais span{
+    font-size: 30px;
+    font-family:'Smooch', cursive;
+}
+
+
+
+/*Terceira parte do corpo do site*/
+.linha2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+}
+.moldura{
+    display: flex;
+    width:400 ;
+    height:300;
+    background: black;
+    box-shadow: 2px 0px 8px 1px #ccc;
+}
+iframe{
+    margin: 13px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    color: bisque;
+    margin: 5px;
+}
+#email{
+    width: 300px;
+    height: 27px;
+}
+#textbox{
+    margin: 5px 5px 5px 0px;
+    height: 100%;
+    width: 300px;
+}
+button {
+    background-color: #007BFF;
+    color: #fff;
+    width: 80px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
     </style>
 </head>
 <body>
@@ -129,10 +256,11 @@
                 <div class="front news-item">
                     <img src="https://j6t2y8j5.rocketcdn.me/wp-content/uploads/2016/07/15-comidas-de-rua-mais-apetitosas-e-bonitas-do-mundo-12.jpg" alt="Novidade 1">
                     <h2>Macarons</h2>
-                    <p>Uma deliciosa iguaria de origem francesa esta sendo vendida em nosso restaurante venha conferir.</p>
+                    <p>passe o mouse para ver mais sobre</p>
                 </div>
                 <div class="back">
-                    <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+                    <p class="descricao">Venha experimentar nossa nova adição ao cardápio, os macarons.<br>Uma deliciosa iguaria de origem francesa esta sendo vendida em nosso restaurante venha conferir.</p>
+                    <button class="botao">Acesse nosso cardápio</button>
                 </div>
                 </div>
             </div>
@@ -146,6 +274,8 @@
                     <p>Uma otima adição para seu cafe da manhã, peça agora uma deliciosa panqueca. </p>
                 </div>
                 <div class="back">
+                    <p class="descricao">Venha experimentar nossa nova adição ao cardápio!<br>Peça agora uma deliciosa panqueca de frutas silvestres!<br> Oferta de tempo limitado!</p>
+                    <button class="botao">Acesse nosso cardápio</button>
                 </div>
                 </div>
             </div>
@@ -155,10 +285,12 @@
                 <div class="card">
                 <div class="front news-item">
                     <img src="https://th.bing.com/th/id/R.2af8a871485849eed27b518b2362de54?rik=pHVHwpd8%2bebWdQ&pid=ImgRaw&r=0" alt="Novidade 2">
-                    <h2>Promoção nas comidas com massa</h2>
-                    <p>Confira agora os descontos em diverços pratos que contem como principal ingrediaente massa. </p>
+                    <h2>Semana das Massas</h2>
+                    <p>Confira agora os descontos em diverços pratos que contem como principal ingrediente massa.</p>
                 </div>
                 <div class="back">
+                    <p class="descricao">Chegou a semana das massas no The Mainson Bouffe! <br>Somente nessa semana, você poderá aproveitar descontos nos mais diversos pratos com massas que estão presentes em nosso cardápio.</p>
+                    <button class="botao">Acesse nosso cardápio</button>
                 </div>
                 </div>
             </div>
@@ -168,14 +300,41 @@
                 <div class="card">
                 <div class="front news-item">
                     <img src="https://th.bing.com/th/id/R.44cd2a35cf86f2570874b774c6e42306?rik=j9GofFSOPItSOA&riu=http%3a%2f%2f4.bp.blogspot.com%2f__rjgLAV3pUg%2fTMpBEO04AII%2fAAAAAAAAAM8%2fxARmgGqG6mQ%2fs1600%2fpizza%2bchocolate.jpg&ehk=Cj3je9fbHZm4k2%2bYgR98lKTxK4vmtIviEuEXDQCAYus%3d&risl=&pid=ImgRaw&r=0" alt="Novidade 2">
-                    <h2>Novo sabor a vendida</h2>
+                    <h2>Pizzas Doces</h2>
                     <p>Veja nossa nova variedades de sabores de pizza</p>
                 </div>
                 <div class="back">
+                    <p class="descricao">Chegou no The Mainson Bouffe mais uma deliciosa opção de sobremesa para você aproveitar! Conheça as pizzas doces,nos sabores:<br><br>Chocolate com Morango<br>Doce de Leite<br>Romeu e Julieta </p>
+                    <button class="botao">Acesse nosso cardápio</button>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="card">
+                <div class="front news-item halloween">
+                    <img src="/video/halloween.jpg" alt="Novidade 1">
+                    <h2 class="halloween">Cuidado!</h2>
+                    <p>passe mouse para ver mais sobre</p>
+                </div>
+                <div class="back">
+                    <p class="descricao">Cuidado com o escuro eles está prestes a chegar! <br>Nosso novo doce de abóbora especial, para comemorar esse dia assustadoooor.<br>Feliz Halloween!</p>
+                    <button class="botao">Acesse nosso cardápio</button>
                 </div>
                 </div>
             </div>
         </section>
     </section>
+    <footer>
+        <div class="espaco">LA MAISON BOUFFE</div>
+        <p class="">&copy; LA MAISON BOUFFE TEAM </p>
+        <div class="redsociais" >
+          <span>Contatos:</span>
+            <a href="#"><i class="bi bi-whatsapp underline"></i>(79)9999-9999</a>
+            <a href="#"><i class="bi bi-twitter-x underline"></i>@LA MAISON BOUFFE</a>
+            <a href="#"><i class="bi bi-telephone underline"></i>(79)3222-9999</a>
+        </div>
+    </footer>
 </body>
 </html>
