@@ -44,8 +44,9 @@
         }
 
         input[type="text"],
-        input[type="password"] {
-            width: 95%;
+        input[type="password"]{
+            display: block;
+            width: 250px;
             padding:6px;
             margin-top: 5px;
             border: 1px solid #ccc;
@@ -98,11 +99,14 @@
         .voltar:hover{
             background-color: #f4f4f4;
         }
+        .span-required{
+            display: none;
+        }
     </style>
     <title>Login</title>
 </head>
 <body>
-    <script src="function.js"></script>
+    <script src="/js/function.js"></script>
     <img src="/video/20231002_023835-removebg-preview.png" alt="logo">
     <a href="/index.html" class="voltar"><i class="bi bi-box-arrow-in-left" style="font-size: 2.5rem;text-align: center;margin-top: 3.5px;"></i></a>
     <div class="container">
@@ -110,11 +114,13 @@
             <h2>Login</h2>
             <div class="input-group">
                 <label for="username">Usuário:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" class="inputs required" oninput="nomeValidar()">
+                <span class="span-required">Digite um nome de usuário válido</span>
             </div>
             <div class="input-group">
                 <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" class="inputs required">
+                <span class="span-required">Digite uma senha válida</span>
             </div>
             <button type="submit" onclick="PagInicial()">Entrar</button>
             <div class="forgot-password mouselink"><a href="Esqueceu a senha.html">Esqueceu a senha?</a></div>
