@@ -178,7 +178,7 @@ a .usuario{
     right: 10px;
     bottom: 10px;
     
-    transition: all 0.5s;
+    transition: all 0.5s !important;
     z-index: 100;
 }
 .carrinho:hover{
@@ -383,7 +383,7 @@ h2{
 
 /* Categorias */
 .colapso{
-     height: 500px !important;
+     height: 300px !important;
      width: 630px !important;
      overflow: scroll;
      position: absolute;
@@ -631,7 +631,7 @@ button {
 
 .nav-item {
   text-transform: uppercase;
-  color: var(--white);
+  color: white;
   transition: 0.2s;
 }
 
@@ -687,7 +687,7 @@ hr {
 
 /*  Footer  */
 .main-footer {
-  background: var(--red);
+  background: red;
   padding: 16px 0;
 }
 
@@ -703,7 +703,7 @@ hr {
 
 .movie-title {
   font-family: "Rock Salt", cursive;
-  color: var(--white);
+  color: white;
 }
 
 .list-container {
@@ -724,9 +724,9 @@ hr {
 
 /* index.html */
 .watch-trailer-button {
-  color: var(--white);
+  color: white;
   font-weight: bold;
-  border: 2px solid var(--red);
+  border: 2px solid red;
   border-radius: 8px;
   padding: 8px 24px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -735,13 +735,13 @@ hr {
 }
 
 .watch-trailer-button:hover {
-  background: var(--red);
+  background: red;
 }
 
 .watch-trailer-button-player {
-  color: var(--red);
+  color: red;
   margin: 24px 0;
-  border: 2px solid var(--red);
+  border: 2px solid red;
   border-radius: 50%;
   padding: 12px;
   font-size: 20px;
@@ -751,8 +751,8 @@ hr {
 }
 
 .watch-trailer-button-player:hover {
-  color: var(--white);
-  background: var(--red);
+  color: white;
+  background: red;
 }
 
 /* MAIN */
@@ -831,9 +831,9 @@ hr {
 }
 
 .button-hover-background {
-  background: var(--red);
-  color: var(--white);
-  border: 2px solid var(--red);
+  background: red;
+  color: white;
+  border: 2px solid red;
   border-radius: 6px;
   padding: 4px 2px;
   font-weight: bold;
@@ -843,7 +843,7 @@ hr {
 
 .button-hover-background:hover {
   background: transparent;
-  color: var(--red);
+  color: red;
 }
 
 /* tabela carrinho de compras */
@@ -854,7 +854,7 @@ hr {
 
 .table-head-item {
   text-align: start;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid gray;
   padding-bottom: 6px;
   text-transform: uppercase;
 }
@@ -891,7 +891,7 @@ hr {
   width: 48px;
   height: 34px;
   border-radius: 6px;
-  border: 2px solid var(--blue);
+  border: 2px solid blue;
   text-align: center;
   background: #eee;
 }
@@ -899,7 +899,7 @@ hr {
 .remove-product-button {
   margin-left: 12px;
   background: #ff0000;
-  color: var(--white);
+  color: white;
   padding: 10px 8px;
   border: 0;
   border-radius: 6px;
@@ -912,7 +912,7 @@ hr {
 }
 
 .cart-total-container {
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid gray;
   text-align: end;
   padding: 6px 16px 0 0;
   font-size: 18px;
@@ -925,8 +925,8 @@ hr {
 .purchase-button {
   display: flex;
   margin: 24px auto 0;
-  background: var(--blue);
-  color: var(--white);
+  background: blue;
+  color: white;
   border: 0;
   border-radius: 6px;
   padding: 16px 20px;
