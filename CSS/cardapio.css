@@ -7,6 +7,11 @@
     box-sizing: border-box ;
     scroll-behavior: smooth;
 }
+.preco{
+  color: black !important;
+  text-align: start !important;
+  margin: 0 !important;
+}
 .buscar{
     width: 100% !important;
     background: #eeeeee00;
@@ -820,7 +825,7 @@ hr {
   margin-top: 8px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
