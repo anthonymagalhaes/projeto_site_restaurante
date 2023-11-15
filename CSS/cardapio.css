@@ -8,19 +8,19 @@
     scroll-behavior: smooth;
 }
 .buscar{
-    width: 400px;
+    width: 100% !important;
     background: #eeeeee00;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    flex-flow: column !important;
+    align-items: center !important;
+    justify-content: center !important;
     position: relative;
 }
 .size{
     height: 11.2rem !important;
 }
 input{
-    width: 90%;
+    width: 50% !important;
     height: 50px;
     padding-left: 20px;
     font-size:22px;
