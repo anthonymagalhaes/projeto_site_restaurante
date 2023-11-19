@@ -226,8 +226,10 @@ a .usuario{
     top: 0;
     height: 50%;
     width: 100%;
-    background: rgba(0, 0, 0,0.4);
-    background-blend-mode: color;
+    background-image: url("/video/quadroNegro.jpg");
+    opacity: 30%;
+    background-size: cover;
+    background-blend-mode: darken;
     z-index: -99;
 }
 .bg-middle{
@@ -271,6 +273,39 @@ h2{
     letter-spacing: 10px;
     position: relative;
     top: 10vh;
+}
+.circle{
+  border-radius: 100% !important;
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 7px solid #b13c3c;
+  box-shadow: 1px 1px 5px #7a1b99;
+  transition: all 0.5s;
+}
+.categorias{
+  height: 120px;
+  width: 120px;
+}
+.icone{
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.circle:hover{
+  border: 2px solid #D41377;
+  font-weight: 500;
+}
+.icone:hover{
+  color: #D41377;
 }
 .bar{
     width: 90%;
@@ -400,7 +435,7 @@ h2{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 450px;
+    height: 200px;
 }
 .card{
     margin: 5px;
