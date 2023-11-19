@@ -1,4 +1,16 @@
+const bola = document.querySelector("#bola");
+    const input = document.querySelector("#input");
+const carrosel = document.querySelector("#carrosel")
+    input.addEventListener("focus", () => {
+      bola.style.display = "none";
+      carrosel.style.display = "none";
+    
+    });
 
+    input.addEventListener("blur", () => {
+      bola.style.display = "block";
+      carrosel.style.display = "block";
+    });
     // filter array 
 let filterarray =[];
 

@@ -269,11 +269,11 @@ h2{
     margin-top: 5px;
     letter-spacing: 10px;
     position: relative;
-    top: 25px;
+    top: 10vh;
 }
 .bar{
     width: 90%;
-    margin-top: 40px;
+    margin-top: 12vh;
     height: 2px;
     background-color: #D41377;
     border-radius: 15px;
