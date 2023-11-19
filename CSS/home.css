@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik:wght@600&display=swap');
 *{
     box-sizing: border-box ;
     scroll-behavior: smooth;
@@ -48,6 +49,8 @@ nav{
     color: #F0F0F0;
     font-weight: 600;
     font-size: 13px;
+    text-shadow: 0px 0px 5px #35041d65;
+
 }
 a .usuario{
     position: absolute;
@@ -84,6 +87,7 @@ a .usuario{
     position: relative;
     margin-right:2.5vw;
     margin-left: 2.5vw;
+    text-shadow: 0px 0px 5px #35041d65;
 }
 
 
@@ -383,19 +387,23 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: auto;
     width: 100%;
-    background-color: rgb(31, 31, 31);
+    background-color: #5a05313a;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
 }
 .moldura{
     display: flex;
     width:400 ;
     height:300;
     background: black;
-    box-shadow: 2px 0px 8px 1px #ccc;
+    box-shadow: 2px 0px 8px 1px rgba(119, 19, 212, 0.253);
 }
 iframe{
     margin: 13px;
+
 }
 form{
     display: flex;
@@ -411,6 +419,7 @@ form{
     margin: 5px 5px 5px 0px;
     height: 100%;
     width: 300px;
+    
 }
 button {
     background-color: #007BFF;
@@ -427,13 +436,115 @@ button:hover {
 }
 
 .linha3{
-    height: 100vh;
-    width: 100%;
-    background-color: #d413773a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    height: 130vh !important;
+    width: 100% !important;
+    position: relative;
+    background-size:cover;
+    color: white;
+    overflow: hidden;
+
 }
+.linha3::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  background-image:url("/video/quadroNegro.jpg");
+  width: 100%; 
+  height: 130vh;
+  filter: opacity(30%);
+}
+.logo2{
+    height: 140px;
+    width: 140px;
+    filter: contrast(1);
+}
+.especiais{
+    font-family: 'Fredericka the Great'!important;
+    color: #c71491 !important;
+    font-weight: 500 !important;
+    font-size: 2.5rem !important;
+    position: relative;
+    transform: rotate(-1deg);
+}
+.especiais2{
+    font-size: 2rem !important;
+    margin-top: 50px !important;
+    color: #ea8c20 !important;
+}
+.bordas{
+    background-color: #000000;
+}
+.enfase{
+    transform: rotate(2deg);
+    font-size: 4rem !important;
+    color: #ea8c20;
+    font-family: 'Rubik', sans-serif;
+}
+.desenho{
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: -10px;
+    bottom: 1px;
+    transform: rotate(-5deg);
+    opacity: 40%;
+}
+.desenho1{
+    height: 150px;
+    width:150px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    transform: rotate(10deg);
+    opacity: 80%;
+}
+.desenho2{
+    height: 97px;
+    width: 97px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: rotate(20deg);
+    opacity: 40%;
+}
+.desenho3{
+    height: 110px;
+    width: 110px;
+    position:absolute;
+    left: 5px;
+    top: 27%;
+    transform: rotate(-20deg);
+    opacity: 70%;
+}
+.desenho4{
+    height: 120px;
+    width: 120px;
+    opacity: 60%;
+}
+.desenho5{
+    height: 210px;
+    width: auto;
+    height: 150vh;
+    opacity: 60%;
+    position: absolute;
+    right: -60vh;
+    bottom: -12vh;
+}
+.texto{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgb(95, 90, 90) !important;
+    line-height: 1.5;
+    height: 200px;
+    width: 300px;
+    margin: auto;
 
-
-
+}
 
 @media screen and (max-width:800px) {
     .itens li a{
@@ -520,12 +631,90 @@ button:hover {
         height: 200px;
         width: 100px;
     }
+
+    .linha3{
+        height: 70vh !important;
+        padding: 0;
+    }
+    .linha3::before{
+        height: 80vh !important;
+    }
+    .texto{
+        font-size: 0.5rem;
+        width: 100px;
+    }
+    .logo2{
+        transform: scale(0.7);
+        position: absolute;
+        top: 50px;
+    }
+    .desenho{
+        transform: scale(0.8);
+        bottom: auto;
+        left: auto;
+        right: 0;
+        
+    }
+    .desenho2{
+        display: none;
+    }
+    .desenho4{
+        height: 70px;
+        width: 70px;
+    }
     
-}
-@media screen and (max-width:1200px){
-    .login{
-        margin-top: 40px;
-        bottom: 0;
-        right: 25px;
+    .desenho5{
+      height: 30vh;
+      right: -10vh;
+      bottom: -50px;
+      
+    }
+    .especiais{
+        font-size: 1rem !important;
+        margin: 0;
+    }
+    .especiais2{
+        margin: 0;
+        opacity: 100%;
+    }
+    .enfase{
+        font-size: 1.5rem !important;
+    }
+    #formulario{
+        display: none;
+    }
+    .linha2{
+        height: 30vh;
+        width: 100%;
+    }
+    #frame{
+        width: 100%;
+        height: 20vh;
+    }
+    footer{
+        width: 100%;
+        height: 10vh;
+        margin: 0 !important;
+    }
+    footer p{
+        font-size: 0.8rem;
+        height: auto;
+        width: auto;
+    }
+    .espaco{
+     font-size: 0.5rem ;
+     margin: 0;
+    }
+    .copy{
+        font-size: 0.5rem;
+    }
+    .redsociais{
+        font-size: 0.4rem;
+        width: 25%;
+        height: 10vh;
+        padding: 0;
+    }
+    .redsociais span{
+        font-size: 1rem;
     }
 }

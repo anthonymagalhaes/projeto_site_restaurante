@@ -14,6 +14,7 @@
 }
 .buscar{
     width: 100% !important;
+    z-index: -1;
     background: #eeeeee00;
     display: flex !important;
     flex-flow: column !important;
@@ -162,7 +163,7 @@ a .usuario{
     justify-content: center;
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 5px;
     height: 75px;
     width: 75px;
     background-color: #fff;

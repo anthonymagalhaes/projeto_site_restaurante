@@ -1,5 +1,5 @@
 const bola = document.querySelector("#bola");
-    const input = document.querySelector("#input");
+    const input = document.querySelector("#myinput");
 const carrosel = document.querySelector("#carrosel")
     input.addEventListener("focus", () => {
       bola.style.display = "none";
