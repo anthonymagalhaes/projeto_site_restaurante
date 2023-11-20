@@ -287,8 +287,8 @@ h2{
   transition: all 0.5s;
 }
 .categorias{
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 180px;
 }
 .icone{
   text-align: center;

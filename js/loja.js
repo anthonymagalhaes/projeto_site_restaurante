@@ -164,8 +164,44 @@ let galleryarray = [
         name : "Coca-Cola",
         src:"/video/coca.jpg",
         desc : "R$11,90"
+    },
+    {
+      id:7,
+      name : "Pizza Romeu e Julieta",
+      src:"/video/pizzaRomeu.jpg",
+      desc : "R$25,90"
+    },
+    {
+    id:8,
+    name : "Doce de Abóbora",
+    src:"/video/receita-de-doce-de-abobora-000-fotor-bg-remover-20231105171022.png",
+    desc : "R$11,90"
+    },
+    {
+      id:9,
+      name : "Fatia de bolo",
+      src:"/video/bolo.jpg",
+      desc : "R$12,90"
+    },
+    {
+      id:10,
+      name : "Pudim",
+      src:"/video/Sobremesas.jpg",
+      desc : "R$11,90"
+    },
+    {
+      id:11,
+      name : "Pizza de Chocolate",
+      src:"/video/pizzachoco.jpg",
+      desc : "R$25,90"
+    },
+    {
+      id:12,
+      name : "Pespsi em lata",
+      src:"/video/pepsi.jpg",
+      desc : "R$6,90"
     }
-   ];
+    ];
 
 
 
