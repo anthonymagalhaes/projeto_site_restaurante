@@ -1,16 +1,4 @@
-const bola = document.querySelector("#bola");
-    const input = document.querySelector("#myinput");
-const carrosel = document.querySelector("#carrosel")
-    input.addEventListener("focus", () => {
-      bola.style.display = "none";
-      carrosel.style.display = "none";
     
-    });
-
-    input.addEventListener("blur", () => {
-      bola.style.display = "block";
-      carrosel.style.display = "block";
-    });
     // filter array 
 let filterarray =[];
 
@@ -67,7 +55,7 @@ function showgallery(curarra){
    document.getElementById("card").innerText = "";
    for(var i=0;i<curarra.length;i++){
        document.getElementById("card").innerHTML += `
-        <div class="col-md-4 mt-3 " >
+        <div class="col-md-4 mt-3 ">
            
            <div class="card size">
            <h4 class="product-title">${curarra[i].name}</h4>
@@ -83,6 +71,7 @@ function showgallery(curarra){
                     
          
           </div>
+        </div>
        `
    }
 
