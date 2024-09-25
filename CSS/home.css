@@ -153,6 +153,7 @@ h1{
 h2{
     font-family: 'Italianno', cursive;
     text-align: center;
+    width: 90%;
     background-image: linear-gradient(128deg,#D41377,#EA3720,#ffa303);
     -webkit-background-clip:text;
     background-clip: text;
