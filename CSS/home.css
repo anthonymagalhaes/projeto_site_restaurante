@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
-
- @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 *{
     box-sizing: border-box ;
@@ -23,7 +22,6 @@ header{
     position: fixed;
     width: 100%;
     height: 80px;
-    background-color: transparent; 
     z-index: 100;   
 }
 nav{
@@ -126,7 +124,8 @@ a .usuario{
     position: absolute;
     right: 0;
     bottom: 0;
-    box-shadow: 0px 0px 30vw 24vw rgba(0, 0, 0, 0.95);
+    box-shadow: 0px 0px 30vw 
+    24vw rgba(0, 0, 0, 0.95);
     width: 100%;
     background: rgb(0, 0, 0);
     z-index: -99;
@@ -219,8 +218,8 @@ h2{
     flex-direction: column;
     width: 100%;
     background-color: rgb(233, 222, 210);
-    height: 100%;
-    padding-bottom: 120px;
+    height: 120vh;
+    padding-bottom: 320px;
 }
 .white{
     display: flex;
@@ -251,11 +250,12 @@ h2{
     height: 600px;
 }
 .textbox{
+    margin-top: 100px;
     height: 200px;
     position: relative;
     right:0 ;
     z-index: 10;
-    padding-bottom: 500px;
+    
     display: flex;
     flex-direction: column;
     font-size: 22px;
@@ -393,7 +393,7 @@ footer p{
     width:400 ;
     height:300;
     background: black;
-    box-shadow: 2px 0px 8px 1px #ccc;
+    
 }
 iframe{
     margin: 13px;
@@ -435,6 +435,7 @@ button:hover {
     .itens li a{
         opacity: 0;
     }
+    
     .logo{
         top:10px;
         left: 0;
@@ -448,6 +449,16 @@ button:hover {
     }
     .login{
         font-size: 12px !important ;
+    }
+    .fundo{
+        opacity: 0;
+    }
+    .imagem{
+        opacity: 0;
+        scale: 0.2;
+    }
+    .bar{
+        opacity: 0;
     }
     .btn1{
         font-size: 5vw !important;
@@ -480,14 +491,26 @@ button:hover {
         height: 70%;
         
     }
+    .redsociais{
+        font-size: 10px;
+    }
+    .redsociais span{
+        font-size: 15px;
+    }
+    .redsociais p{
+        font-size: 14px;
+    }
+    .espaco{
+        font-size: 10px;
+    }
     .textbox{
         background: transparent;
         text-align: center;
         height: 300px;
         width: 250px;
         font-size: 12px;
-        right: 0;
-        box-shadow: 0px 0px 0px 0px;
+        margin: 0 auto;
+        
         margin-right: 10px !important;
         padding-bottom: 0;
     }
@@ -504,9 +527,7 @@ button:hover {
     .categorias span{
         font-size: 3vw;
     }
-    .imagem{
-        height: 200px;
-    }
+    
     .fundo{
         width: 200px;
         margin-top: 20px;
@@ -516,7 +537,19 @@ button:hover {
         height: 200px;
         width: 100px;
     }
-    
+    .moldura{
+        width: 100%;
+    }
+    .moldura iframe{
+        scale: 0.5;
+        justify-content: start;
+    }
+    form{
+        opacity: 0;
+        width: 0;
+        position: absolute;
+        margin: 0;
+    }
 }
 @media screen and (max-width:1200px){
     .login{

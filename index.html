@@ -13,7 +13,7 @@
     <img src="/video/VideoBackground(1).gif" alt="GIF" class="bg-video">
     <div class="inicio"></div>
     <div class="bg-middle"></div>
-        <header>
+        <header class="target">
             <nav>
                 <img src="/video/20231002_023835-removebg-preview.png" alt="LOGO" class="logo">
                 <ul class="itens">
@@ -52,18 +52,18 @@
             <i class="bi bi-arrow-down-short" style="color: beige;z-index: 1;font-size: 1.5rem;"></i>
             <p style="color: beige;z-index: 1;">Sobre</p>
         </a>
-             <div class="linha1" >
+             <div class="linha1 t" >
                 
                 <div class="container text-center" style="padding-top: 40px;">
                     <div class="row">
-                      <div class="col-5 col-md-6">
+                      <div class="col-0 col-md-6">
                         <div class="imagemtotal">
                             <div class="bar"></div>
                             <img src="/video/Polka-Dot-PNG-Image-Background.png" alt="" class="fundo">
                             <img src="/video/Daco_4861318.png" alt="" class="imagem">
                        </div>
                       </div>
-                      <div class="col-7 col-md-6">
+                      <div class="col-10 col-md-6">
                         <p class="textbox"><span>LA MAISON BOUFFE</span><pan>Nosso objetivo é proporcionar aos nossos clientes uma experiência gastronômica <strong>inesquecível</strong>. Para isso, contamos com um serviço atencioso e uma equipe de profissionais qualificados. </pan><img src="/video/selodequalidade.png"  class="selo" alt="selo"></p>
                       </div>
                     </div>
@@ -94,5 +94,17 @@
                 <a href="#"><i class="bi bi-telephone underline"></i>(79)3222-9999</a>
             </div>
         </footer>
+        <script>
+          window.addEventListener('scroll', function() {
+              const target = document.querySelector('.target');
+              const scrollPosition = window.scrollY;
+      
+              if (scrollPosition >= 600) { // Altere este valor para a posição desejada
+                  target.style.backgroundColor = '#7777775b';
+              } else {
+                  target.style.backgroundColor = 'transparent';
+              }
+          });
+      </script>
 </body>
 </html>

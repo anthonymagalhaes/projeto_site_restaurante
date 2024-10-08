@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: beige;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px; /* Adiciona espaçamento interno */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 95%;
+  padding:6px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para o link "Esqueceu a senha?" */
+.forgot-password {
+  margin-top: 10px;
+  text-decoration: underline;
+  color: #007BFF;
+  cursor: pointer;
+}
+.register{
+  margin-top: 10px;
+  text-decoration: underline;
+  color: #007BFF;
+  cursor: pointer;
+}
+.mouselink:hover{
+  color:aqua
+}
+.voltar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 75px;
+  width: 75px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 500px;
+  border: 1px solid black;
+}
+.voltar:hover{
+  background-color: #f4f4f4;
+}
